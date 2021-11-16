@@ -1,0 +1,97 @@
+.kotak1 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 495px;
+  top: 287px;
+
+  background: #5a8a7c;
+  border-radius: 14px;
+}
+.kotak2 {
+  position: absolute;
+  width: 367px;
+  height: 40px;
+  left: 536px;
+  top: 455px;
+
+  background: #c4c4c4;
+  border-radius: 6px;
+}
+.kotak3 {
+  position: absolute;
+  width: 367px;
+  height: 40px;
+  left: 536px;
+  top: 520px;
+
+  background: #c4c4c4;
+  border-radius: 6px;
+}
+.kotak4 {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  left: 536px;
+  top: 578px;
+  background: #c4c4c4;
+  border-radius: 1px;
+}
+.loginForm {
+  position: absolute;
+  width: 357px;
+  height: 84px;
+  left: 541px;
+  top: 311px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 72px;
+  line-height: 84px;
+  color: #ffffff;
+}
+.username {
+  position: absolute;
+  width: 117px;
+  height: 28px;
+  left: 573px;
+  top: 461px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.password {
+  position: absolute;
+  width: 117px;
+  height: 28px;
+  left: 573px;
+  top: 526px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.rememberMe {
+  position: absolute;
+  width: 157px;
+  height: 28px;
+  left: 580px;
+  top: 583px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}

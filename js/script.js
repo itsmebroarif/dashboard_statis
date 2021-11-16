@@ -1,0 +1,1 @@
+console.log(success, 200, 'Web Berhasil Dijalankan');

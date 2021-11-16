@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<style>
+body {
+  background: #ffffff;  
+  margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-left: 5px;
+  /* -webkit-box-shadow: 2px 0px 3px rgba(126, 126, 126, 0.1); */
+}
+form {
+  width: 80%;
+  margin: 65px auto;
+  background: rgba(239, 239, 239, 0.788);
+  padding: 60px 120px 80px 120px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+}
+.label-txt {
+  position: absolute;
+  top: -2.6em;
+  padding: 4px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.452);
+  transition: ease .2s;
+}
+.input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.line-box {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8BC34A;
+  transition: ease .6s;
+}
+
+.input:focus + .line-box .line {
+  width: 100%;
+}
+
+.label-active {
+  top: 3em;
+}
+
+.form-control{
+  border-radius: 0px;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(75, 75, 75);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+  border-radius: 10px;
+}
+
+button:hover {
+  border-radius: 30px;
+  color:#ffffff;
+  background: #000000;
+}
+
+</style>
+<!------ Include the above in your HEAD tag ---------->
+
+<form>
+  <h1>Edit User</h1>
+    <label>
+        <p class="label-txt"><u>Name</u></p>
+        <input type="text" class="input">
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+    </label>
+    <label>
+      <p class="label-txt"><u>Email</u></p>
+      <input type="text" class="input">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt"><u>Password</u></p>
+      <input type="text" class="input">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt"><u>Re-type Password</u></p>
+      <input type="text" class="input">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+
+
+
+  <label>
+    <p class="label-txt"><U>Role</U></p>
+    <select class="form-control mb-3" id="exampleFormControlSelect1">
+      <option>Select User Role</option>
+      <option>Admin</option>
+      <option>Role</option>
+    </select>
+  </label>
+
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+  $('.input').focus(function(){
+    $(this).parent().find(".label-txt").addClass('label-active');
+  });
+
+  $(".input").focusout(function(){
+    if ($(this).val() == '') {
+      $(this).parent().find(".label-txt").removeClass('label-active');
+    };
+  });
+
+});
+</script>
